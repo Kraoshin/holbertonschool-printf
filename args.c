@@ -1,4 +1,4 @@
-#include "prnt.h"
+#include "main.h"
 
 /**
  *
