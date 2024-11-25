@@ -4,7 +4,9 @@
  *
  */
 
-int charac(char c)
+int print_char(va_list args)
 {
-	return (write(1, &c, 1));
+	char c = va_arg(args, int);
+
+	return(_putchar(c));
 }
