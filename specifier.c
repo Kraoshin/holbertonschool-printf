@@ -11,6 +11,7 @@ int specifier(const char charac, va_list args)
 	op_t specif[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 
