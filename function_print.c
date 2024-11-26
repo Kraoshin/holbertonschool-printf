@@ -54,7 +54,7 @@ int print_integer(va_list args)
 
 	if (num < 0)
 	{
-		result += _puthcar('-');
+		result += _putchar('-');
 		num *= -1;
 	}
 
