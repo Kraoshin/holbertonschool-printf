@@ -75,6 +75,7 @@ int print_integer(va_list args)
 	{
 		result += _putchar('-');
 		num *= -1;
+		/*print - char and send num as positive*/
 	}
 
 	if (num < 10)
@@ -96,6 +97,3 @@ int print_integer(va_list args)
 
 	return (result);
 }
-
-
-
