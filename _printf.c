@@ -21,24 +21,23 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%' && !format[i + 1])
 			return (-1);
+
 		if (format[i] == '%' && format[i + 1] == ' ' && !format[i + 2])
 			return (-1);
 		i++;
 	}
+
 	i = 0;
 
 	while (format[i])
 	{
 		if (format[i] == '%')
 		{
-			if (format[i] == '%' && !format[i + 1])
-				return (-1);
-			if (format[i] == '%' && format[i + 1] == ' ' && !format[i + 2])
-				return (-1);
 			lenprinted += specifier(format[i + 1], args);
 			/*pass the char after the % and the args list in the function specifier*/
 			i += 2;
 		}
+
 		else
 		{
 			lenprinted++;
