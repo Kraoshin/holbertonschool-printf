@@ -34,7 +34,7 @@ int print_string(va_list args)
 	while (string[len])
 	{
 		_putchar(string[len]);
-		i++;
+		len++;
 	}
 
 	return (len);
