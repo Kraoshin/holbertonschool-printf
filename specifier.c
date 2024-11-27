@@ -25,7 +25,6 @@ int specifier(const char charac, va_list args)
 	}
 
 	_putchar('%');
-	_putchar(charac);
 
 	return (2);
 }
