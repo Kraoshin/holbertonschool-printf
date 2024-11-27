@@ -29,7 +29,17 @@ int print_string(va_list args)
 {
 	int len = 0;
 	char *string = va_arg(args, char *);
-
+	
+	if (!str)
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		return (6);
+	}
 
 	while (string[len])
 	{
