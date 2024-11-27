@@ -16,7 +16,6 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 
 	if (!format)
-
 		return (-1);
 
 	while (format[i])
@@ -24,6 +23,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			lenprinted += specifier(format[i + 1], args);
+			/*pass the char after the percent and the args list in the function specifier*/
 			i += 2;
 		}
 
@@ -34,6 +34,8 @@ int _printf(const char *format, ...)
 			i++;
 		}
 	}
+
 	va_end(args);
+
 	return (lenprinted);
 }
