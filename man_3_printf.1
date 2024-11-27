@@ -1,0 +1,90 @@
+.TH PRINTF 3 "November 2024" "Holbeton School Project" "User Commands"
+
+.SH NAME
+_printf \- produces formatted output
+
+.SH SYNOPSIS
+.B #include "main.h"
+.B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The _printf() function produces formatted output according to the format specified by
+the 'format' string, which may contain both normal characters and format specifiers
+(preceded by the % character). The following specifiers are supported:
+
+.IP \[bu] 10
+% c  : Prints a single character.
+.IP \[bu] 10
+% s  : Prints a string.
+.IP \[bu] 10
+%%   : Prints a percent sign ('%').
+.IP \[bu] 10
+% d  : Prints an integer.
+.IP \[bu] 10
+% i  : Prints an integer (same as %d).
+
+The function supports variable arguments, which are provided after the format string.
+
+The function works by iterating over the 'format' string and processing each character.
+If a '%' character is encountered, the subsequent character (the specifier) is processed
+using the corresponding function. If a non-format character is encountered,
+it is printed directly.
+
+If an invalid or unsupported specifier is encountered, the '%' character is printed
+followed by the unsupported character.
+
+The function uses a custom implementation of `va_list` and `va_start` to handle the variable
+arguments passed to it.
+
+The _printf() function returns the total number of characters printed (excluding the null
+byte at the end of the string). If an invalid format string is provided (e.g., a NULL format string),
+the function returns -1.
+
+.SH RETURN VALUE
+Upon successful execution, _printf() returns the total number of characters printed (including
+spaces). In case of an error (such as a NULL format string), it returns -1.
+
+.SH EXAMPLES
+.B Example 1:
+.nf
+int result = _printf("Hello, %s!\n", "World");
+printf("Printed %d characters.\n", result);
+.fi
+Output:
+.nf
+Hello, World!
+Printed 14 characters.
+.fi
+
+.B Example 2:
+.nf
+int result = _printf("Character: %c\n", 'A');
+printf("Printed %d characters.\n", result);
+.fi
+Output:
+.nf
+Character: A
+Printed 14 characters.
+.fi
+
+.B Example 3:
+.nf
+int result = _printf("Percentage sign: %%\n");
+printf("Printed %d characters.\n", result);
+.fi
+Output:
+.nf
+Percentage sign: %
+Printed 19 characters.
+.fi
+
+.SH SEE ALSO
+printf(3)
+
+.SH BUGS
+This implementation is not complete and does not support all format specifiers
+available in the standard `printf` function. Only the basic ones (%c, %s, %d, %i, and %%)
+are currently supported.
+
+.SH AUTHORS
+Killian Kerleau, Charlène MARTIN.
