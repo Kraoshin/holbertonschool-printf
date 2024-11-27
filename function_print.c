@@ -29,8 +29,8 @@ int print_string(va_list args)
 {
 	int len = 0;
 	char *string = va_arg(args, char *);
-	
-	if (!str)
+
+	if (!string)
 	{
 		_putchar('(');
 		_putchar('n');
