@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			lenprinted += specifier(format[i + 1], args);
-			/*pass the char after the percent and the args list in the function specifier*/
+			/*pass the char after the % and the args list in the function specifier*/
 			i += 2;
 		}
 
