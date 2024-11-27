@@ -1,6 +1,11 @@
 #include "main.h"
 
 /**
+ * print_char - a function that print the character
+ *
+ * @args: argument that will replace the format specifier, if any
+ *
+ * Return: return the function _putchar with the argument as the character
  *
  */
 
@@ -12,25 +17,35 @@ int print_char(va_list args)
 }
 
 /**
+ * print_string - a function that print the string
+ *
+ * @args: argument that will replace the format specifier, if any
+ *
+ * Return: return len of printed string
  *
  */
 
 int print_string(va_list args)
 {
-	int i = 0;
+	int len = 0;
 	char *string = va_arg(args, char *);
 
 
-	while (string[i])
+	while (string[len])
 	{
-		_putchar(string[i]);
+		_putchar(string[len]);
 		i++;
 	}
 
-	return (i);
+	return (len);
 }
 
 /**
+ * print_percent - a function that print the percent
+ *
+ * @args: argument that will replace the format specifier, if any
+ *
+ * Return: return number of printed char
  *
  */
 
@@ -44,7 +59,11 @@ int print_percent(va_list args)
 }
 
 /**
+ * print_integer - a function that print the integer
  *
+ * @args: argument that will replace the format specifier, if any
+ *
+ * Return: return the number of printed character
  */
 
 int print_integer(va_list args)
