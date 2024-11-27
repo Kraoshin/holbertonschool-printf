@@ -13,13 +13,19 @@ int print_percent(va_list args);
 int print_integer(va_list args);
 
 /**
+ * struct print_args - List of format specifier and their print function.
  *
+ * @specifiers: Define how an arg should be formatted & displayed when printed
+ * @f: Function pointer printing the argument in the correct format.
+ *
+ * Description: This structure associate a format specifier with the function
+ * to print the argument in the right format
  */
 
-typedef struct op
+typedef struct print_args
 {
-	char *op;
+	char *specifiers;
 	int (*f)(va_list args);
-} op_t;
+} print_a;
 
 #endif
