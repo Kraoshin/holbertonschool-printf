@@ -68,5 +68,5 @@ Format specifiers (those starting with %) are handled by specialized functions.
 Non-format characters are printed directly to the output.                                                                   A custom implementation of va_list and va_start manages those variable arguments
 
 ## 🧑💻 Authors
-Killian Kerleau
+Killian Kerleau,
 Charlène MARTIN
