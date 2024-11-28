@@ -30,6 +30,15 @@ This project provides a custom implementation of the `printf` function in C, all
 
 ## 🚀 Getting Started
 
+### 📋 Requirements
+
+
+‣ Allowed editors: vi,vim or emacs.
+‣ All the files will be compiled on Ubuntu 20.04 LTS using gcc.
+‣ Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl)
+‣ You are not allowed to use global variables
+‣ No more than 5 functions per file
+‣ The prototypes of all your functions should be included in your header file called main.h
 
 
 ### Compilation
@@ -37,7 +46,7 @@ This project provides a custom implementation of the `printf` function in C, all
 Ready to compile? Just use this command:
 
 ```bash
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o printf
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 
 ## Usage
@@ -61,6 +70,10 @@ int _printf(const char *format, ...);
 
 ![Mon image](https://imgur.com/nYLd0H1.png)
 
+📘 MAN page
+Execution: `man ./man_3_printf`
+![Mon image](https://imgur.com/V3Zqf5T.png)
+
 ## ⚙️Under the Hood
 
 The _printf function carefully examines the format string, character by character.
@@ -68,5 +81,5 @@ Format specifiers (those starting with %) are handled by specialized functions.
 Non-format characters are printed directly to the output.                                                                   A custom implementation of va_list and va_start manages those variable arguments
 
 ## 🧑💻 Authors
-Killian Kerleau,
-Charlène MARTIN
+[Killian Kerleau](https://github.com/Kraoshin),
+[Charlène MARTIN](https://github.com/Knarta)
