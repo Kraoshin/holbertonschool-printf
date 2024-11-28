@@ -49,15 +49,15 @@ Ready to compile? Just use this command:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 ```
 
-## Usage
+## ⚙ Usage
 
-## 1 - Include the header file:
+### 1 - Include the header file:
 
 ```
 #include "main.h"
 ```
 
-## 2 -Call the _printf function:
+### 2 -Call the _printf function:
 ```
 int _printf(const char *format, ...);
 ```
@@ -75,7 +75,7 @@ int _printf(const char *format, ...);
 Execution: `man ./man_3_printf`
 ![Mon image](https://imgur.com/V3Zqf5T.png)
 
-## ⚙️Under the Hood
+## 💡Under the Hood
 
 The _printf function carefully examines the format string, character by character.
 Format specifiers (those starting with %) are handled by specialized functions.
