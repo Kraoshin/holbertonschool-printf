@@ -4,6 +4,16 @@
 
 This project provides a custom implementation of the `printf` function in C, allowing you to understand and customize how your data is displayed.
 
+### 📋 Requirements
+
+
+* Allowed editors: vi,vim or emacs.
+* All the files will be compiled on Ubuntu 20.04 LTS using gcc.
+* Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl).
+* You are not allowed to use global variables
+* No more than 5 functions per file.:x
+* The prototypes of all your functions should be included in your header file called main.h
+
 ## ✨ Features
 
 * **Essential Format Specifiers:**
@@ -29,16 +39,6 @@ This project provides a custom implementation of the `printf` function in C, all
 |_putchar.c|contains the function that display|
 
 ## 🚀 Getting Started
-
-### 📋 Requirements
-
-
-* Allowed editors: vi,vim or emacs.
-* All the files will be compiled on Ubuntu 20.04 LTS using gcc.
-* Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl).
-* You are not allowed to use global variables
-* No more than 5 functions per file.:x
-* The prototypes of all your functions should be included in your header file called main.h
 
 
 ### Compilation
@@ -70,7 +70,7 @@ int _printf(const char *format, ...);
 
 ![Mon image](https://imgur.com/nYLd0H1.png)
 
-📘 MAN page
+### 📘 MAN page
 
 Execution: `man ./man_3_printf`
 ![Mon image](https://imgur.com/V3Zqf5T.png)
