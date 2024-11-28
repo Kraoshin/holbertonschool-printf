@@ -71,6 +71,7 @@ int _printf(const char *format, ...);
 ![Mon image](https://imgur.com/nYLd0H1.png)
 
 📘 MAN page
+
 Execution: `man ./man_3_printf`
 ![Mon image](https://imgur.com/V3Zqf5T.png)
 
