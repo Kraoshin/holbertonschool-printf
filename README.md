@@ -33,12 +33,12 @@ This project provides a custom implementation of the `printf` function in C, all
 ### 📋 Requirements
 
 
-‣ Allowed editors: vi,vim or emacs.
-‣ All the files will be compiled on Ubuntu 20.04 LTS using gcc.
-‣ Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl).
-‣ You are not allowed to use global variables
-‣ No more than 5 functions per file.:x
-‣ The prototypes of all your functions should be included in your header file called main.h
+* Allowed editors: vi,vim or emacs.
+* All the files will be compiled on Ubuntu 20.04 LTS using gcc.
+* Your code should use the Betty style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/main/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/main/betty-doc.pl).
+* You are not allowed to use global variables
+* No more than 5 functions per file.:x
+* The prototypes of all your functions should be included in your header file called main.h
 
 
 ### Compilation
