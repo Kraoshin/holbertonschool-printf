@@ -1,4 +1,4 @@
-![Mon image](https://imgur.com/lNtgnEz.png)
+![Mon GIF](https://imgur.com/A0esYPU.gif)
                                         
 ## 📄 Description
 
@@ -31,7 +31,7 @@ This project provides a custom implementation of the `printf` function in C, all
 | FILE	|DESCRIPTION|
 |:---:|:---:|
 |_printf.c	|contains my main _printf function|
-|_printf_flowchart.png	|contains in shemas the process of the function|
+|_printf_flowchart.png	|contains a shema or the shema|
 |main.h	|contains the main structure and the function prototypes|
 |man_3_printf.1	|man page of the _printf function
 |function_print.c	|contains the print functions requested to display|
